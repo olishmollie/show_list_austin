@@ -1,0 +1,27 @@
+{
+  "name": "show_list_austin",
+  "version": "1.0.0",
+  "description": "Mobile app for the popular Austin website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollieshmollie/show_list_austin.git"
+  },
+  "keywords": [
+    "music",
+    "web-scraping",
+    "austin"
+  ],
+  "author": "ollieshmollie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ollieshmollie/show_list_austin/issues"
+  },
+  "homepage": "https://github.com/ollieshmollie/show_list_austin#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
