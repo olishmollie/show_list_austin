@@ -1,11 +1,12 @@
 var express = require('express');
-var showList = require('./showList');
+var scraper = require('./scraper');
 
 var app = express();
 
 app.get('/', function(req, res) {
-  showList.getHTML();
-  res.send('Hello Show List Austin!');
+  scraper.scrape(function(html) {
+    res.send(html);
+  });
 });
 
 app.listen(3000, function() {
