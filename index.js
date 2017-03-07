@@ -9,7 +9,8 @@ app.get('/', function(req, res) {
       console.log(error);
       return;
     }
-    res.send(html);
+    res.write(html);
+    res.end();
   });
 });
 
