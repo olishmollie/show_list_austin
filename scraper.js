@@ -2,7 +2,7 @@ const cheerio = require('cheerio'),
       showList = require('./showList'),
       ShowDay = require('./lib/showDay');
 
-exports.scrape = function(callback) {
+exports.scrapeShows = function(callback) {
   showList.getHTML(function(error, html) {
     if (error) { return callback(error) }
 
