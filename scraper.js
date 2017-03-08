@@ -1,14 +1,13 @@
 const cheerio = require('cheerio'),
-    showList = require('./showList');
+      showList = require('./showList'),
+      Show = require('./lib/show');
 
 exports.scrape = function(callback) {
   showList.getHTML(function(error, html) {
     if (error) { return callback(error) }
 
-    var $ = cheerio.load(html);
+    var page = cheerio.load(html);
 
-    var showsToday = $('.content').children('table').first();
-    
-    return callback(null, showsToday.text());
+    return callback(null, 'yup');
   });
 }
