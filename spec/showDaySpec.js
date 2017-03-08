@@ -1,4 +1,4 @@
-var ShowDay = require('../lib/day.js');
+var ShowDay = require('../lib/showDay');
 
 describe('ShowDay', function() {
 
@@ -13,5 +13,6 @@ describe('ShowDay', function() {
     it('has an html string of its shows', function() {
       expect(showDay.shows).toEqual('<hr style="color:#cccccc;" />Julian Neel, Casey Golden, The Dan Ryan at <a href="http://www.hotelvegasaustin.com/"><b>Hotel Vegas</b></a> (1500 E. 6th St.) [<a href="cgi/genpage.cgi?venue=hotelvegas" title="list by venue">+</a>] <font color="#666666">[9pm]</font>');
     });
+
   });
 });
