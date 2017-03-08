@@ -1,13 +1,21 @@
 const cheerio = require('cheerio'),
       showList = require('./showList'),
-      Show = require('./lib/show');
+      ShowDay = require('./lib/showDay');
 
 exports.scrape = function(callback) {
   showList.getHTML(function(error, html) {
     if (error) { return callback(error) }
 
-    var page = cheerio.load(html);
+    var $ = cheerio.load(html);
 
-    return callback(null, 'yup');
+    var dates = $('table', '.content');
+    var datesArr = dates.map(function(index, element) {
+      var date = $(this).prev().text().replace(/\[link\]/, '');
+      return new ShowDay(date, $(this).text());
+    });
+
+    console.dir(datesArr);
+
+    return callback(null, dates.toString());
   });
 }
