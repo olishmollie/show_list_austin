@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/ollieshmollie/show_list_austin#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "tinyreq": "^3.2.0"
   }
 }
