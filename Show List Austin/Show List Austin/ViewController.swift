@@ -27,18 +27,24 @@ class ViewController: UIViewController {
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             guard let data = data, error == nil else { return }
             do {
-                var text: String;
                 
-                let showInfoDict = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! [String:AnyObject]
+                let showInfoDict = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String:AnyObject]
                 
                 let shows = showInfoDict["shows"] as! [String]
-                
-                text = shows.joined(separator: "\n")
+                let x = 10
+                var y = 20
                 
                 DispatchQueue.main.async() {
-                    self.showInfo.text = text
+                    for show in shows {
+                        let dynamicLabel = UILabel(frame: CGRect(x: x, y: y, width: Int(self.view.bounds.width), height: 20))
+                        dynamicLabel.textColor = UIColor.black
+                        dynamicLabel.textAlignment = NSTextAlignment.left
+                        dynamicLabel.text = show
+                        
+                        self.view.addSubview(dynamicLabel)
+                        y += 30
+                    }
                 }
-                
                 
             } catch {
                 print("ERROR!")

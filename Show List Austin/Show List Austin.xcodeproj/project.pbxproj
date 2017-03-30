@@ -414,6 +414,7 @@
 				85FA1AD11E714741001F8F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85FA1AD21E714741001F8F27 /* Build configuration list for PBXNativeTarget "Show List AustinTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				85FA1AD41E714741001F8F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
