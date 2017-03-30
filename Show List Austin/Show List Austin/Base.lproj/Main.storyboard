@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +21,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kv-Rl-EiO">
+                                <rect key="frame" x="16" y="131" width="343" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Shows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkk-pZ-WK1">
+                                <rect key="frame" x="100" y="56" width="174" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2kv-Rl-EiO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6jZ-Dt-zoJ"/>
+                            <constraint firstItem="Mkk-pZ-WK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="Fge-cg-1vT"/>
+                            <constraint firstItem="2kv-Rl-EiO" firstAttribute="top" secondItem="Mkk-pZ-WK1" secondAttribute="bottom" constant="43" id="Mf5-6o-Yp9"/>
+                            <constraint firstItem="Mkk-pZ-WK1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="P1S-sp-ypT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2kv-Rl-EiO" secondAttribute="bottom" constant="8" id="RUe-Fu-k38"/>
+                            <constraint firstItem="2kv-Rl-EiO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kkF-UI-VCk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mkk-pZ-WK1" secondAttribute="trailing" constant="85" id="qcs-ax-Ojj"/>
+                            <constraint firstItem="2kv-Rl-EiO" firstAttribute="top" secondItem="Mkk-pZ-WK1" secondAttribute="bottom" constant="43" id="rpc-hS-T6t"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showsView" destination="2kv-Rl-EiO" id="bAY-2k-Qpb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

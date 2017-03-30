@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var showInfo: UITextView!
+    @IBOutlet weak var showsView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
                         dynamicLabel.textAlignment = NSTextAlignment.left
                         dynamicLabel.text = show
                         
-                        self.view.addSubview(dynamicLabel)
+                        self.showsView.addSubview(dynamicLabel)
                         y += 30
                     }
                 }
