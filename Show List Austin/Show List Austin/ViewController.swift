@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var showsView: UIView!
+    @IBOutlet weak var spinningWheel: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func getTodaysShows(_ sender: Any) {
+        getShowInfo()
+    }
+    
     func getShowInfo() {
+        showsView.subviews.forEach({ $0.removeFromSuperview() })
+        
+        spinningWheel.hidesWhenStopped = true
+        spinningWheel.startAnimating()
+        
         let url = URL(string: "http://localhost:3000/shows/today")
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
@@ -49,6 +60,7 @@ class ViewController: UIViewController {
                         
                         y += Double(dynamicLabel.frame.height) + 10.0
                     }
+                    self.spinningWheel.stopAnimating()
                 }
                 
             } catch {
