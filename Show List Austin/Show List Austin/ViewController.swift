@@ -31,18 +31,23 @@ class ViewController: UIViewController {
                 let showInfoDict = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String:AnyObject]
                 
                 let shows = showInfoDict["shows"] as! [String]
-                let x = 10
-                var y = 20
+                let x = 0.0
+                var y = 0.0
                 
                 DispatchQueue.main.async() {
                     for show in shows {
-                        let dynamicLabel = UILabel(frame: CGRect(x: x, y: y, width: Int(self.view.bounds.width), height: 20))
+                        let dynamicLabel = UILabel(frame: CGRect(x: x, y: y, width: Double(self.showsView.frame.width), height: 21.0))
+                            
                         dynamicLabel.textColor = UIColor.black
-                        dynamicLabel.textAlignment = NSTextAlignment.left
+                        dynamicLabel.textAlignment = NSTextAlignment.center
+                        dynamicLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+                        dynamicLabel.numberOfLines = 0
                         dynamicLabel.text = show
+                        dynamicLabel.sizeToFit()
                         
                         self.showsView.addSubview(dynamicLabel)
-                        y += 30
+                        
+                        y += Double(dynamicLabel.frame.height) + 10.0
                     }
                 }
                 
