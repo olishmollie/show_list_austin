@@ -23,11 +23,6 @@ class CurrentShowsTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func reloadButton(_ sender: Any) {
-        reloadTable()
-        print("Reload button pressed.")
-    }
-    
     func reloadTable() {
         self.tableView.reloadData()
     }
