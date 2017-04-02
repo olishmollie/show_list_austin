@@ -6,98 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Show_List_Austin" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Shows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkk-pZ-WK1">
-                                <rect key="frame" x="100" y="28" width="174" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-Nk-uzo">
-                                <rect key="frame" x="16" y="68" width="343" height="541"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRc-dK-A6Z">
-                                        <rect key="frame" x="8" y="8" width="327" height="269"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="327" id="17h-Dn-upl"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="327" id="6w5-90-cht"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="269" id="jfF-fS-bvF"/>
-                                            <constraint firstAttribute="height" constant="269" id="v9B-to-X2I"/>
-                                        </constraints>
-                                    </view>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3Gl-nP-EkZ">
-                                        <rect key="frame" x="161" y="285" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="Nzg-aj-5sc"/>
-                                            <constraint firstAttribute="width" constant="20" id="WAm-F8-fcV"/>
-                                        </constraints>
-                                    </activityIndicatorView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="3Gl-nP-EkZ" firstAttribute="centerY" secondItem="YGg-Nk-uzo" secondAttribute="centerY" constant="24.5" id="Gmz-bp-lhv"/>
-                                    <constraint firstItem="3Gl-nP-EkZ" firstAttribute="centerX" secondItem="wRc-dK-A6Z" secondAttribute="centerX" id="Q00-8q-kUb"/>
-                                    <constraint firstItem="wRc-dK-A6Z" firstAttribute="leading" secondItem="YGg-Nk-uzo" secondAttribute="leading" constant="8" id="Qhp-Zc-YyR"/>
-                                    <constraint firstAttribute="bottom" secondItem="wRc-dK-A6Z" secondAttribute="bottom" constant="264" id="YWg-kA-Vgy"/>
-                                    <constraint firstItem="wRc-dK-A6Z" firstAttribute="top" secondItem="YGg-Nk-uzo" secondAttribute="top" constant="8" id="dPr-jQ-Cva"/>
-                                    <constraint firstAttribute="trailing" secondItem="wRc-dK-A6Z" secondAttribute="trailing" constant="8" id="x39-PA-cUB"/>
-                                </constraints>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezm-Wz-rIs">
-                                <rect key="frame" x="16" y="617" width="343" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="a6v-Ka-Tj1"/>
-                                </constraints>
-                                <state key="normal" title="Today's Shows"/>
-                                <connections>
-                                    <action selector="getTodaysShows:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ymG-Fh-zdJ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="YGg-Nk-uzo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5uD-4z-862"/>
-                            <constraint firstItem="YGg-Nk-uzo" firstAttribute="top" secondItem="Mkk-pZ-WK1" secondAttribute="bottom" constant="8" id="8Yg-16-ijs"/>
-                            <constraint firstItem="ezm-Wz-rIs" firstAttribute="top" secondItem="YGg-Nk-uzo" secondAttribute="bottom" constant="8" id="BFY-q5-uw5"/>
-                            <constraint firstItem="Mkk-pZ-WK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="Fge-cg-1vT"/>
-                            <constraint firstItem="ezm-Wz-rIs" firstAttribute="leading" secondItem="YGg-Nk-uzo" secondAttribute="leading" id="M5l-nA-Ls6"/>
-                            <constraint firstItem="Mkk-pZ-WK1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="P1S-sp-ypT"/>
-                            <constraint firstItem="ezm-Wz-rIs" firstAttribute="trailing" secondItem="YGg-Nk-uzo" secondAttribute="trailing" id="QgJ-Te-D1E"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mkk-pZ-WK1" secondAttribute="trailing" constant="85" id="qcs-ax-Ojj"/>
-                            <constraint firstItem="YGg-Nk-uzo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sDX-sM-1K6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ezm-Wz-rIs" secondAttribute="bottom" constant="8" symbolic="YES" id="tyy-Fi-DiB"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="scrollView" destination="YGg-Nk-uzo" id="X6Z-zz-sD6"/>
-                        <outlet property="showsView" destination="wRc-dK-A6Z" id="vtZ-mk-YPN"/>
-                        <outlet property="spinningWheel" destination="3Gl-nP-EkZ" id="LF3-bN-Djb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-142" y="35"/>
-        </scene>
-        <!--Current Shows Table View Controller-->
+        <!--Today's Shows-->
         <scene sceneID="hpb-e4-XaN">
             <objects>
                 <tableViewController id="NO8-QD-hM7" customClass="CurrentShowsTableViewController" customModule="Show_List_Austin" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="azy-Jm-pLF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="azy-Jm-pLF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,7 +49,7 @@
                             <outlet property="delegate" destination="NO8-QD-hM7" id="Nw7-kb-drb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="v8f-Au-GmW"/>
+                    <navigationItem key="navigationItem" title="Today's Shows" id="v8f-Au-GmW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhq-fL-2QS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

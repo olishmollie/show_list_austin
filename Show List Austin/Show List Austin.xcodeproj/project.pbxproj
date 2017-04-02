@@ -11,7 +11,6 @@
 		855789201E9095260043859F /* ShowListClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557891F1E9095260043859F /* ShowListClient.swift */; };
 		855789221E9097D50043859F /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855789211E9097D50043859F /* ShowCell.swift */; };
 		85FA1AB31E714740001F8F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA1AB21E714740001F8F27 /* AppDelegate.swift */; };
-		85FA1AB51E714740001F8F27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA1AB41E714740001F8F27 /* ViewController.swift */; };
 		85FA1AB81E714740001F8F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FA1AB61E714740001F8F27 /* Main.storyboard */; };
 		85FA1ABB1E714740001F8F27 /* Show_List_Austin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85FA1AB91E714740001F8F27 /* Show_List_Austin.xcdatamodeld */; };
 		85FA1ABD1E714740001F8F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FA1ABC1E714740001F8F27 /* Assets.xcassets */; };
@@ -35,7 +34,6 @@
 		855789211E9097D50043859F /* ShowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
 		85FA1AAF1E714740001F8F27 /* Show List Austin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Show List Austin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FA1AB21E714740001F8F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85FA1AB41E714740001F8F27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85FA1AB71E714740001F8F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85FA1ABA1E714740001F8F27 /* Show_List_Austin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Show_List_Austin.xcdatamodel; sourceTree = "<group>"; };
 		85FA1ABC1E714740001F8F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				85FA1AB21E714740001F8F27 /* AppDelegate.swift */,
-				85FA1AB41E714740001F8F27 /* ViewController.swift */,
 				8557891F1E9095260043859F /* ShowListClient.swift */,
 				85FA1AB61E714740001F8F27 /* Main.storyboard */,
 				855789211E9097D50043859F /* ShowCell.swift */,
@@ -215,7 +212,6 @@
 			files = (
 				855789221E9097D50043859F /* ShowCell.swift in Sources */,
 				85FA1ABB1E714740001F8F27 /* Show_List_Austin.xcdatamodeld in Sources */,
-				85FA1AB51E714740001F8F27 /* ViewController.swift in Sources */,
 				8557891E1E9094BD0043859F /* CurrentShowsTableViewController.swift in Sources */,
 				85FA1AB31E714740001F8F27 /* AppDelegate.swift in Sources */,
 				855789201E9095260043859F /* ShowListClient.swift in Sources */,
