@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" rowHeight="75" id="aWf-cl-Sjy" customClass="ShowCell" customModule="Show_List_Austin" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" rowHeight="140" id="aWf-cl-Sjy" customClass="ShowCell" customModule="Show_List_Austin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="aWf-cl-Sjy" id="4IN-HX-KdF">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B66-Wx-Sa8">
-                                            <rect key="frame" x="8" y="0.0" width="359" height="75"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="123.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -35,8 +35,10 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="B66-Wx-Sa8" secondAttribute="trailing" constant="8" id="4Uy-Uq-LL1"/>
                                         <constraint firstItem="B66-Wx-Sa8" firstAttribute="leading" secondItem="4IN-HX-KdF" secondAttribute="leading" constant="8" id="R6h-Jn-qcr"/>
-                                        <constraint firstAttribute="bottom" secondItem="B66-Wx-Sa8" secondAttribute="bottom" id="Y3D-ta-oHK"/>
-                                        <constraint firstItem="B66-Wx-Sa8" firstAttribute="top" secondItem="4IN-HX-KdF" secondAttribute="top" id="g3P-7E-orh"/>
+                                        <constraint firstAttribute="bottom" secondItem="B66-Wx-Sa8" secondAttribute="bottom" constant="8" id="RoN-nU-o5t"/>
+                                        <constraint firstItem="B66-Wx-Sa8" firstAttribute="top" secondItem="4IN-HX-KdF" secondAttribute="top" constant="8" id="SSR-jc-sHu"/>
+                                        <constraint firstAttribute="trailing" secondItem="B66-Wx-Sa8" secondAttribute="trailing" constant="8" id="hNP-UZ-tSS"/>
+                                        <constraint firstItem="B66-Wx-Sa8" firstAttribute="leading" secondItem="4IN-HX-KdF" secondAttribute="leading" constant="8" id="sNj-qu-vGD"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

@@ -14,7 +14,8 @@ class CurrentShowsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
         client.getCurrentShows(callback: reloadTable)
     }
 
@@ -29,7 +30,6 @@ class CurrentShowsTableViewController: UITableViewController {
     
     func reloadTable() {
         self.tableView.reloadData()
-        print("Finished")
     }
 
     // MARK: - Table view data source
