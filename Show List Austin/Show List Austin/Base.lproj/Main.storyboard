@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m6T-iv-5mU">
-                                <rect key="frame" x="16" y="183" width="343" height="476"/>
+                                <rect key="frame" x="16" y="72" width="343" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" rowHeight="140" id="aWf-cl-Sjy" customClass="ShowCell" customModule="Show_List_Austin" customModuleProvider="target">
@@ -58,28 +57,13 @@
                                     <outlet property="delegate" destination="3HY-FY-ryX" id="zJh-UB-zi7"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showlistlogo2013web" translatesAutoresizingMaskIntoConstraints="NO" id="M1B-gX-lhY">
-                                <rect key="frame" x="16" y="72" width="343" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="M1B-gX-lhY" secondAttribute="height" multiplier="343:83" id="TUy-px-qZt"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showlistaustin_divide" translatesAutoresizingMaskIntoConstraints="NO" id="dqd-Un-nPI">
-                                <rect key="frame" x="16" y="163" width="343" height="12"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="M1B-gX-lhY" firstAttribute="top" secondItem="tLB-6f-0X5" secondAttribute="bottom" constant="8" id="7Zk-uM-ffq"/>
-                            <constraint firstItem="dqd-Un-nPI" firstAttribute="leading" secondItem="CzW-1J-Hsl" secondAttribute="leadingMargin" id="8e0-ON-Fe9"/>
-                            <constraint firstItem="m6T-iv-5mU" firstAttribute="top" secondItem="dqd-Un-nPI" secondAttribute="bottom" constant="8" id="HKQ-HE-z5n"/>
-                            <constraint firstItem="M1B-gX-lhY" firstAttribute="leading" secondItem="CzW-1J-Hsl" secondAttribute="leadingMargin" id="Nyp-9u-UVu"/>
-                            <constraint firstItem="m6T-iv-5mU" firstAttribute="leading" secondItem="CzW-1J-Hsl" secondAttribute="leadingMargin" id="RwX-nk-Kr1"/>
-                            <constraint firstItem="m6T-iv-5mU" firstAttribute="trailing" secondItem="CzW-1J-Hsl" secondAttribute="trailingMargin" id="T3W-f2-D54"/>
-                            <constraint firstItem="M1B-gX-lhY" firstAttribute="trailing" secondItem="CzW-1J-Hsl" secondAttribute="trailingMargin" id="Xv4-eI-bro"/>
-                            <constraint firstItem="dqd-Un-nPI" firstAttribute="trailing" secondItem="CzW-1J-Hsl" secondAttribute="trailingMargin" id="nQh-od-PrP"/>
-                            <constraint firstItem="zco-Bu-96t" firstAttribute="top" secondItem="m6T-iv-5mU" secondAttribute="bottom" constant="8" id="qiH-fS-8DI"/>
-                            <constraint firstItem="dqd-Un-nPI" firstAttribute="top" secondItem="M1B-gX-lhY" secondAttribute="bottom" constant="8" id="r7I-wz-6nz"/>
+                            <constraint firstItem="m6T-iv-5mU" firstAttribute="trailing" secondItem="CzW-1J-Hsl" secondAttribute="trailingMargin" id="8WB-kL-Dnx"/>
+                            <constraint firstItem="zco-Bu-96t" firstAttribute="top" secondItem="m6T-iv-5mU" secondAttribute="bottom" constant="8" id="HPU-Mm-LbU"/>
+                            <constraint firstItem="m6T-iv-5mU" firstAttribute="top" secondItem="tLB-6f-0X5" secondAttribute="bottom" constant="8" id="JVc-3K-Gjn"/>
+                            <constraint firstItem="m6T-iv-5mU" firstAttribute="leading" secondItem="CzW-1J-Hsl" secondAttribute="leadingMargin" id="dqZ-G0-koJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ola-Nr-ZZW"/>
@@ -110,8 +94,4 @@
             <point key="canvasLocation" x="2432.8000000000002" y="43.628185907046479"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="showlistaustin_divide" width="700" height="12"/>
-        <image name="showlistlogo2013web" width="495" height="120"/>
-    </resources>
 </document>

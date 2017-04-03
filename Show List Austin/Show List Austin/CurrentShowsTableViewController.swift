@@ -19,6 +19,17 @@ class CurrentShowsTableViewController: UIViewController, UITableViewDelegate, UI
         tableView.estimatedRowHeight = 140
         client.getCurrentShows(callback: reloadTable)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let nav = self.navigationItem
+        let navBar = self.navigationController!.navigationBar
+        let imgView = UIImageView(image: UIImage(named: "showlistaustin_logo"))
+        
+        // TODO: - Scale down image width
+        navBar.backgroundColor = .yellow
+        nav.titleView = imgView
+        imgView.frame = CGRect(x: 0, y: 0, width: 0, height: navBar.bounds.height * 0.8)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
