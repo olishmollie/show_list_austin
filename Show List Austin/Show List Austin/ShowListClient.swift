@@ -24,7 +24,7 @@ class ShowListClient {
                 self.shows = showInfoDict["shows"] as? [String]
                 
                 DispatchQueue.main.async {
-                    callback(self.shows!)
+                    completionHandler(self.shows!)
                 }
                 
             } catch {

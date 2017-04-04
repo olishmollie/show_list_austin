@@ -21,16 +21,27 @@ class CurrentShowsTableViewController: UIViewController, UITableViewDelegate, UI
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let navBar = navigationController!.navigationBar
-        let imgView = UIImageView(image: UIImage(named: "showlistaustin_logo"))
-        
-        // TODO: - Scale image width
-        imgView.frame.size = CGSize(width: navBar.frame.width, height: navBar.frame.height)
-        navigationItem.titleView = imgView
+        setupNavbar()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setupNavbar() {
+        let navBar = navigationController?.navigationBar
+        navBar?.backgroundColor = .yellow
+        setupNavbarImage()
+    }
+    
+    func setupNavbarImage() {
+        let img = UIImage(named: "showlistaustin_logo")!
+        let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: img.size.width * 0.35, height: img.size.height * 0.35))
+        imgView.bounds = imgView.frame.insetBy(dx: 0, dy: 2.0)
+        imgView.image = img
+        
+        navigationItem.titleView = imgView
+        imgView.contentMode = .scaleAspectFit
     }
     
     func reloadTable(shows: [String]) {
