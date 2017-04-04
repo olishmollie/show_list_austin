@@ -10,7 +10,7 @@ import Foundation
 
 class ShowListClient {
     
-    let url = URL(string: "http://localhost:3000/shows/today")
+    let url = URL(string: "https://mysterious-caverns-34861.herokuapp.com/shows/today")
     var shows: [String]?
     
     func getCurrentShows(callback: @escaping () -> Void) {
