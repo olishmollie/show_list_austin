@@ -13,7 +13,7 @@ class ShowListClient {
     let url = URL(string: "https://mysterious-caverns-34861.herokuapp.com/shows/today")
     var shows: [String]?
     
-    func getCurrentShows(callback: @escaping () -> Void) {
+    func getCurrentShows(completionHandler: @escaping ([String]) -> Void) {
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             guard let data = data, error == nil else { return }
@@ -24,7 +24,7 @@ class ShowListClient {
                 self.shows = showInfoDict["shows"] as? [String]
                 
                 DispatchQueue.main.async {
-                    callback()
+                    callback(self.shows!)
                 }
                 
             } catch {

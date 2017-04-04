@@ -17,7 +17,7 @@ class CurrentShowsTableViewController: UIViewController, UITableViewDelegate, UI
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
-        client.getCurrentShows(callback: reloadTable)
+        client.getCurrentShows(completionHandler: reloadTable)
     }
     
     override func viewDidAppear(_ animated: Bool) {
