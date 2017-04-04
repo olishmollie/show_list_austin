@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="aWf-cl-Sjy" id="4IN-HX-KdF">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="139.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B66-Wx-Sa8">
@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHx-zw-6l6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3372" y="43.628185907046479"/>
+            <point key="canvasLocation" x="1802" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sz0-1x-wQp">
@@ -91,7 +91,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czl-hG-FyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2432.8000000000002" y="43.628185907046479"/>
+            <point key="canvasLocation" x="863" y="90"/>
         </scene>
     </scenes>
 </document>
