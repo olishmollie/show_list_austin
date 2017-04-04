@@ -25,6 +25,7 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "express": "^4.15.2",
+    "nodemon": "^1.11.0",
     "tinyreq": "^3.2.0"
   }
 }
